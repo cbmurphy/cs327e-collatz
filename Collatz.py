@@ -11,29 +11,26 @@
 # ------------
 
 import sys
-
-def collatz_read(r, a):
-    """
-    reads two ints into a[0] and a[1]
-    r is a  reader
-    a is an array of int
-    return true if that succeeds, false otherwise
-    """
-    s = r.readline()
-    if not s:
-      return False
-    l = s.split()
-    a[0] = int(l[0])
-    a[1] = int(l[1])
-    assert a[0] > 0
-    assert a[1] > 0
-    return True
+hashTable = {}
+def collatz_read (r, a) :
+    """ reads two ints into a[0] and a[1] r is a  reader a is an array
+    of int return true if that succeeds, false otherwise """
+    try:
+        s = r.readline()
+        l = s.split()
+        a[0] = int(l[0])
+        a[1] = int(l[1])
+        assert a[0] > 0
+        assert a[1] > 0
+        return True
+    except:
+        return False
 
 # ------------
 # collatz_eval
 # ------------
 
-def collatz_eval(i, j):
+def collatz_eval (i, j) :
     """
     i is the beginning of the range, inclusive
     j is the end       of the range, inclusive
@@ -42,14 +39,22 @@ def collatz_eval(i, j):
     assert i > 0
     assert j > 0
     highCount = 0
+    if i > j:
+        i, j = j, i
     for x in range(i, j + 1):
+      hashArray = {}
+      startNum = x
       count = 0
       while (x > 1):
-        if (x % 2) == 0:
-          x /= 2
+        if x in hashTable:
+            count += hashTable[x]
+            break
+        elif (x % 2) == 0:
+          x //= 2
         else:
           x = x * 3 + 1
         count += 1
+      hashTable[startNum] = count
       count += 1
       if count > highCount:
         highCount = count
@@ -60,7 +65,7 @@ def collatz_eval(i, j):
 # collatz_print
 # -------------
 
-def collatz_print(w, i, j, v):
+def collatz_print (w, i, j, v) :
     """
     prints the values of i, j, and v
     w is a writer
@@ -74,7 +79,7 @@ def collatz_print(w, i, j, v):
 # collatz_solve
 # -------------
 
-def collatz_solve(r, w):
+def collatz_solve (r, w) :
     """
     read, eval, print loop
     r is a reader
@@ -84,5 +89,7 @@ def collatz_solve(r, w):
     while collatz_read(r, a) :
         v = collatz_eval(a[0], a[1])
         collatz_print(w, a[0], a[1], v)
+    return 0
 
 collatz_solve(sys.stdin, sys.stdout)
+
