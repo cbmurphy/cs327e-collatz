@@ -1,9 +1,10 @@
 all:
-	make run
-	make test
+	make doc
+	make log
+	make zip
 
 diff:
-	RunCollatz.py < RunCollatz.in > RunCollatz.tmp
+	python RunCollatz.py < RunCollatz.in > RunCollatz.tmp
 	diff RunCollatz.out RunCollatz.tmp
 	rm RunCollatz.tmp
 
@@ -14,10 +15,10 @@ log:
 	git log > Collatz.log
 
 run:
-	RunCollatz.py < RunCollatz.in
+	python RunCollatz.py < RunCollatz.in
 
 test:
-	TestCollatz.py
+	python TestCollatz.py
 
 turnin-list:
 	turnin --list hychyc07 cs372epj1

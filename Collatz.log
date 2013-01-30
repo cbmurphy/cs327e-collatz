@@ -1,0 +1,53 @@
+commit 170f15508472565bbc563d4bee52e357391e450e
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Wed Jan 30 11:07:37 2013 -0600
+
+    removed README.md
+
+commit c6bb7d052715cd2b728af2352605110b712ae7c6
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Wed Jan 30 11:06:08 2013 -0600
+
+    added README.txt file
+
+commit 5053a04835a23d5c688f17912128c898308ed9a2
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Wed Jan 30 11:02:03 2013 -0600
+
+    added supporting files
+
+commit 0f38b2e5b07d7207504f68fa9d4eddc5337d1688
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Wed Jan 30 10:50:47 2013 -0600
+
+    Added CollatzSphere.py
+
+commit 8dc49ece3959ac9e3f827ed02efa13723917d250
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Wed Jan 30 10:48:56 2013 -0600
+
+    updated Collatz.py and added CollatzSphere.py
+
+commit f8a29c3c8a571db423ccb37ad3bb6a15bded4d89
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Tue Jan 22 20:33:29 2013 -0600
+
+    added hash table for efficiency
+
+commit d7ee73c80dbdbd1fe1b0eb4ad75f46259262f2fb
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Tue Jan 22 20:28:01 2013 -0600
+
+    changed to instructor's format
+
+commit e286b0b045a12bbcbbc232dbe3f07e4524c5e7b2
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Tue Jan 22 20:15:49 2013 -0600
+
+    first commit
+
+commit 3c7290ada569e480c66e4546de68a63655c8ad6f
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Tue Jan 22 20:14:04 2013 -0600
+
+    initial commit, basic Collatz problem

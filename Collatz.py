@@ -6,12 +6,12 @@
 # Glenn P. Downing
 # ---------------------------
 
+hashTable = {}
+
 # ------------
 # collatz_read
 # ------------
 
-import sys
-hashTable = {}
 def collatz_read (r, a) :
     """ reads two ints into a[0] and a[1] r is a  reader a is an array
     of int return true if that succeeds, false otherwise """
