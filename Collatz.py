@@ -34,6 +34,7 @@ def collatz_eval (i, j) :
     """
     i is the beginning of the range, inclusive
     j is the end       of the range, inclusive
+    note: i need not be less than j
     return the max cycle length in the range [i, j]
     """
     assert i > 0
@@ -91,5 +92,5 @@ def collatz_solve (r, w) :
         collatz_print(w, a[0], a[1], v)
     return 0
 
-collatz_solve(sys.stdin, sys.stdout)
-
+if __name__ == "__main__":
+    collatz_solve(sys.stdin, sys.stdout)
