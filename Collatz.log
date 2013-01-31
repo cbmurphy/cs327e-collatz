@@ -1,3 +1,15 @@
+commit 8b23ea959da2a5f6895ed6a3088fbbcc71b892e3
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Wed Jan 30 12:13:20 2013 -0600
+
+    Removed improperly named file
+
+commit 13176f8e9648327e99993fe2f403d3cd08ec0370
+Author: Collin Murphy <cbmurphy@utexas.edu>
+Date:   Wed Jan 30 12:12:37 2013 -0600
+
+    Changed file names and added log and doc files
+
 commit 170f15508472565bbc563d4bee52e357391e450e
 Author: Collin Murphy <cbmurphy@utexas.edu>
 Date:   Wed Jan 30 11:07:37 2013 -0600

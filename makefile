@@ -2,6 +2,7 @@ all:
 	make doc
 	make log
 	make zip
+	make clean
 
 diff:
 	python RunCollatz.py < RunCollatz.in > RunCollatz.tmp
