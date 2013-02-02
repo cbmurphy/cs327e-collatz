@@ -1,6 +1,7 @@
 all:
 	make doc
 	make log
+	make test
 	make zip
 	make clean
 
@@ -19,7 +20,7 @@ run:
 	python RunCollatz.py < RunCollatz.in
 
 test:
-	python TestCollatz.py
+	python TestCollatz.py >& TestCollatz.out
 
 turnin-list:
 	turnin --list hychyc07 cs372epj1

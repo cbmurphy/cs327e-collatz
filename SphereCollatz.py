@@ -2,13 +2,14 @@
 import sys
 hashTable = {}
 def collatz_read (r, a) :
-    s = r.readline()
-    if not s:
+    try:
+        s = r.readline()
+        l = s.split()
+        a[0] = int(l[0])
+        a[1] = int(l[1])
+        return True
+    except:
         return False
-    l = s.split()
-    a[0] = int(l[0])
-    a[1] = int(l[1])
-    return True
     
 def collatz_eval (i, j) :
     highCount = 0
@@ -50,5 +51,5 @@ for y in range(1000,1000000, 1000):
     x = y
 
 
-#collatz_solve(sys.stdin, sys.stdout)
+collatz_solve(sys.stdin, sys.stdout)
 
